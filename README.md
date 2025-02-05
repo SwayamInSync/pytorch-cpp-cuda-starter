@@ -1,6 +1,9 @@
 # pytorch-cpp-cuda-starter
 Setting up VSCode to work with PyTorch in C/C++ with CUDA support
 
+**Update**:
+- Added `simple_matmul.cu` to demonstrate how to use torch with in C/C++
+
 ## Prerequisites
 - CUDA Toolkit (tested with CUDA 12.4)
 - CMake (>= 3.18)
