@@ -15,7 +15,7 @@ set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --std=c++17 -Xcompiler=-std=c++17")
 
 # Set PyTorch paths
 # Run "print(os.path.dirname(torch.__file__))" and put the output below
-set(TORCH_INSTALL_PREFIX "Output of above command")
+set(TORCH_INSTALL_PREFIX <TORCH_PREFIX>)
 list(APPEND CMAKE_PREFIX_PATH ${TORCH_INSTALL_PREFIX})
 set(TORCH_INSTALL_DIR ${TORCH_INSTALL_PREFIX})
 
