@@ -1,4 +1,4 @@
-# torch_cpp
+# pytorch-cpp-cuda-starter
 Setting up VSCode to work with PyTorch in C/C++ with CUDA support
 
 ## Prerequisites
