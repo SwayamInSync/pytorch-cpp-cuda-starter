@@ -1,0 +1,18 @@
+{
+  "configurations": [
+      {
+          "name": "Linux",
+          "includePath": [
+              "${workspaceFolder}/**",
+              "/usr/local/cuda-12.4/include",
+              # Add the PyTorch include directories here, see readme for info
+          ],
+          "defines": [],
+          "compilerPath": "/usr/local/cuda-12.4/bin/nvcc",
+          "cStandard": "c17",
+          "cppStandard": "c++17",
+          "intelliSenseMode": "linux-gcc-x64"
+      }
+  ],
+  "version": 4
+}
