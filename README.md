@@ -54,3 +54,28 @@ cmake ..
 make
 ./my_cuda_program
 ```
+
+### 6. Common Issues and Solutions
+
+- **VSCode showing squiggly lines under includes**: Make sure your include paths in c_cpp_properties.json are correct
+- **CMake can't find CUDA**: Ensure CUDA is in your PATH and CMake version is >= 3.18
+- **Linking errors**: Verify PyTorch paths in CMakeLists.txt match your installation
+
+### 7. GPU Compatibility
+Default configuration is for NVIDIA Ampere (Compute Capability 8.0)
+For other GPU architectures, modify `CMAKE_CUDA_ARCHITECTURES` in CMakeLists.txt:
+
+- Hopper (9.0)
+  - H100
+
+- Ampere (8.0)
+  - A100, A30, A10
+  - A6000, A5000, A4000
+
+- Volta (7.0)
+  - V100
+  - Tesla V100
+
+- Pascal (6.0, 6.1, 6.2)
+  - P100, P40, P4
+  - Tesla P100
